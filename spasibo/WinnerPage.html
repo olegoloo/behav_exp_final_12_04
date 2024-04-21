@@ -1,0 +1,19 @@
+{{ block title }}
+    Спасибо за участие!
+
+
+{{ endblock }}
+{{ block content }}
+<div class="alert alert-info" xmlns="http://www.w3.org/1999/html">
+        Ваш код участника: {{participant.code}}. Запомните или запишите его, после эксперимента он может понадобиться.
+</div>
+
+Вы попали в число счастливчиков и получаете денежный приз! Если вы хотите забрать
+свой выигрыш, отметьте это в вопросе ниже. Через некоторое время с вами свяжется
+Лиза (tg: @Olegolo) по поводу выплаты вознаграждения.
+<br>
+<br>
+{{ formfields }}
+<br>
+<button type="next_button" class="btn btn-success">Завершить</button>
+{{ endblock }}
