@@ -8,7 +8,7 @@ Your app description
 class C(BaseConstants):
     NAME_IN_URL = 'testapp_2'
     PLAYERS_PER_GROUP = 8
-    NUM_ROUNDS = 2
+    NUM_ROUNDS = 5
 
 
 class Subsession(BaseSubsession):
