@@ -33,13 +33,13 @@ class Player(BasePlayer):
 # PAGES
 class WinnerPage(Page):
     def is_displayed(self):
-        return self.id_in_group == 1 or self.id_in_group == 8
+        return self.id_in_group == 1 or self.id_in_group == 3
     form_model = 'player'
     form_fields = ['get', 'contact']
 
 class NoWinPage(Page):
     def is_displayed(self):
-        return self.id_in_group != 1 and self.id_in_group != 8
+        return self.id_in_group != 1 and self.id_in_group != 3
     form_model = 'player'
 
 
