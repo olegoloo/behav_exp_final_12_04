@@ -77,7 +77,7 @@ class Player(BasePlayer):
     def set_payoff(self):
         if self.id_in_group != 4:
             return self.balance - self.offer
-        elif self.sum_offer() > self.porog_small:
+        elif self.sum_offer() >= self.porog_small:
             return self.balance
         else:
             return 0
