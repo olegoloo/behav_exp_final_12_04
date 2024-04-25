@@ -26,13 +26,13 @@ class Group(BaseGroup):
                 + group.get_player_by_id(3).offer)
 
     def ost(group):
-        if (group.sum_offer()) > 450:
+        if (group.sum_offer()) >= 450:
             return (f'Оставшиеся средства будут получены случайным игроком. Остаток: {group.sum_offer() - 450}₽')
         else:
             return (" ")
 
     def results(group):
-        if group.sum_offer() > 450:
+        if group.sum_offer() >= 450:
             return ('Вам удалось набрать минимально необходимую сумму. '
                     'Пострадавшему будут возвращены все потерянные средства!')
         else:
@@ -40,7 +40,7 @@ class Group(BaseGroup):
 
 
     def results_recip(group):
-        if group.sum_offer() > 450:
+        if group.sum_offer() >= 450:
             return ('Донорам удалось набрать минимально необходимую сумму. '
                     'Вам будут возвращены потерянные средства!')
         else:
